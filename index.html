@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>AGENT OFFICE — CS Graduate Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="topbar">
+  <div class="brand">MMQbot.<span>dev</span> — AGENT OFFICE</div>
+  <div style="font-size:10px;color:var(--text-dim);letter-spacing:1px;">SIGNAL PIPELINE MONITOR v3.0</div>
+  <nav>
+    <a href="#hero">HOME</a>
+    <a href="#projects-section">PROJECTS</a>
+    <!-- <a href="#skills-section">SKILLS</a> -->
+    <a href="#contact-section">CONTACT</a>
+  </nav>
+  <div class="server-status">
+    <div class="dot"></div>
+    <span>SERVER ONLINE</span>
+    <div id="ping" class="ping">PING: <span id="ping-val">12</span>ms</div>
+    <div id="clock">00:00:00</div>
+  </div>
+</div>
+
+<div class="page">
+
+  <section id="hero">
+
+    <div class="panel panel-scan" id="key-levels">
+      <div class="panel-header">
+        <div class="panel-title">KEY LEVELS</div>
+        <div class="panel-dot"></div>
+      </div>
+
+      <div class="section-divider">◀ IDENTITY</div>
+      <div class="kv-row"><span class="kv-label">NAME</span><span class="kv-val blue">Fazekas Kristof</span></div>
+      <div class="kv-row"><span class="kv-label">DEGREE</span><span class="kv-val amber">Computer Science BSc</span></div>
+      <div class="kv-row"><span class="kv-label">STATUS</span><span class="kv-val">ACTIVE</span></div>
+
+      <div class="section-divider">◀ LANGUAGES</div>
+      <div class="kv-row"><span class="kv-label">HU</span><span class="kv-val">NATIVE</span></div>
+      <div class="kv-row"><span class="kv-label">RO</span><span class="kv-val">NATIVE</span></div>
+      <div class="kv-row"><span class="kv-label">EN</span><span class="kv-val">FLUENT</span></div>
+
+      <div class="section-divider">◀ HOBBIES</div>
+      <div class="kv-row"><span class="kv-label">SPORT</span><span class="kv-val">FOOTBALL</span></div>
+      <div class="kv-row"><span class="kv-label">SPORT</span><span class="kv-val">PADEL</span></div>
+      <div class="kv-row"><span class="kv-label">DIGITAL</span><span class="kv-val">GAMING</span></div>
+      <div class="kv-row"><span class="kv-label">MEDIA</span><span class="kv-val">SOCIAL MEDIA</span></div>
+<!-- 
+      <div class="section-divider">◀ SYSTEMS</div>
+      <div class="kv-row"><span class="kv-label">OS</span><span class="kv-val">LINUX/WIN</span></div>
+      <div class="kv-row"><span class="kv-label">ALGO</span><span class="kv-val">ONLINE</span></div>
+      <div class="kv-row"><span class="kv-label">BOT</span><span class="kv-val">DEV</span></div>
+      <div class="kv-row"><span class="kv-label">UPTIME</span><span class="kv-val">99.4%</span></div> -->
+
+      <div class="section-divider">◀ METRICS</div>
+      <div class="kv-row"><span class="kv-label">PROJECTS</span><span class="kv-val">5+</span></div>
+      <div class="kv-row"><span class="kv-label">COMMITS</span><span class="kv-val">1.2K</span></div>
+      <div class="kv-row"><span class="kv-label">COFFEE</span><span class="kv-val">∞</span></div>
+
+      <div id="mini-chart">
+        <canvas id="chartCanvas"></canvas>
+      </div>
+    </div>
+
+    <div class="panel" id="hero-center">
+      <div class="panel-header">
+        <div class="panel-title">AGENT PROFILE</div>
+        <div class="panel-dot"></div>
+      </div>
+      <div class="hero-main">
+        <div class="hero-tag">◀ COMPUTER SCIENCE GRADUATE ▶</div>   
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 8px;">
+          <div class="hero-name glitch-text" style="margin-bottom: 0;">DEVELOPER<div class="cursor"></div></div>
+          <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 5px; padding-bottom: 4px;">
+            <div style="font-family: var(--pixel), monospace; font-size: 10px; color: var(--amber); letter-spacing: 1px;">"NO RISK, NO REWARD"</div>
+            <div style="font-family: var(--pixel), monospace; font-size: 10px; color: var(--text-dim); letter-spacing: 1px;">"LEARNING IS A LIFELONG PROCESS"</div>
+          </div>
+        </div>
+        <div class="hero-sub">INTRADAY TRADER + AI ENGINEER</div>
+        <div class="hero-desc">
+          A <span class="highlight">CS graduate</span> architecting systems at the intersection of
+          <span class="highlight">software engineering</span> and <span class="highlight">financial markets</span>.
+          Currently building an autonomous <span class="highlight">algorithmic trading pipeline</span>
+          — signal detection, automated execution, and live market analysis —
+          powered by custom-built infrastructure.
+          <br><br>
+          Fluent in <span class="highlight">Hungarian</span>, <span class="highlight">Romanian</span>,
+          and <span class="highlight">English</span>. Thinks in logic, dreams in candlesticks.
+        </div>
+
+        <div class="pixel-char-area">
+          <svg class="char-svg" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" style="width:48px;height:72px;image-rendering:pixelated;margin-right:8px;opacity:0.85">
+            <rect x="5" y="1" width="6" height="3" fill="#7B4F2E"/>
+            <rect x="4" y="2" width="8" height="3" fill="#7B4F2E"/>
+            <rect x="4" y="4" width="8" height="6" fill="#F5C899"/>
+            <rect x="5" y="6" width="2" height="1" fill="#2c1a0e"/>
+            <rect x="9" y="6" width="2" height="1" fill="#2c1a0e"/>
+            <rect x="6" y="9" width="4" height="1" fill="#d4906a"/>
+            <rect x="3" y="10" width="10" height="8" fill="#2255aa"/>
+            <rect x="6" y="10" width="4" height="8" fill="#efefef"/>
+            <rect x="1" y="10" width="3" height="6" fill="#2255aa"/>
+            <rect x="12" y="10" width="3" height="6" fill="#2255aa"/>
+            <rect x="1" y="15" width="3" height="2" fill="#F5C899"/>
+            <rect x="12" y="15" width="3" height="2" fill="#F5C899"/>
+            <rect x="4" y="18" width="3" height="5" fill="#333"/>
+            <rect x="9" y="18" width="3" height="5" fill="#333"/>
+            <rect x="3" y="22" width="4" height="2" fill="#111"/>
+            <rect x="9" y="22" width="4" height="2" fill="#111"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="reasoning">
+      <div class="panel-header">
+        <div class="panel-title">CLAUDE REASONING</div>
+        <div class="panel-dot" style="background:var(--amber);box-shadow:0 0 4px var(--amber)"></div>
+      </div>
+      <div class="reasoning-body">
+        <div class="reasoning-status">
+          <div class="r-stat">
+            <label>STATUS</label>
+            <value class="amber">BUILDING</value>
+          </div>
+          <div class="r-stat">
+            <label>SIGNAL</label>
+            <value>ALGO_BOT</value>
+          </div>
+          <div class="r-stat">
+            <label>CONF</label>
+            <value class="amber">HIGH</value>
+          </div>
+          <div class="r-stat">
+            <label>TRADES</label>
+            <value>AUTO</value>
+          </div>
+          <div class="r-stat">
+            <label>P&L</label>
+            <value>IN PROGRESS</value>
+          </div>
+        </div>
+        <div class="reasoning-text">
+          <div class="typewriter" id="reasoning-text">Algorithmic pipeline active — NQ structure mapped, signal layers compiled, awaiting breakout confirmation...</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="side-panel">
+
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">LANGUAGES</div>
+          <div class="panel-dot"></div>
+        </div>
+        <div class="lang-grid">
+          <div class="lang-item">
+            <div class="lang-name">HUNGARIAN</div>
+            <div class="lang-level"><span>█████</span> Native</div>
+          </div>
+          <div class="lang-item">
+            <div class="lang-name">ROMANIAN</div>
+            <div class="lang-level"><span>█████</span> Native</div>
+          </div>
+          <div class="lang-item" style="grid-column:span 2">
+            <div class="lang-name">ENGLISH</div>
+            <div class="lang-level"><span>████</span>░ Fluent</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">TECH STACK</div>
+          <div class="panel-dot"></div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row">
+            <span class="skill-name">Python</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Java</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">C / C++</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:50%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">HTML / CSS</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">SQL / DB</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Algo Trading</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:60%;background:var(--amber)"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Data Analysis</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
+          </div>
+          <!-- <div class="skill-row">
+            <span class="skill-name">Technical Analysis</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:72%;background:var(--amber)"></div></div>
+          </div> -->
+        </div>
+      </div>
+      <div class="panel" style="flex:1">
+        <div class="panel-header">
+          <div class="panel-title">MARKETS & SKILLS</div>
+          <div class="panel-dot"></div>
+        </div>
+        <div class="skill-list">
+          <div class="skill-row">
+            <span class="skill-name">Technical Analysis</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:80%;background:var(--amber)"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Futures (NQ/ES/GC)</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Long-Term Investing</span>
+            <div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="section-header" id="projects-section">
+    <h2>◆ ACTIVE PROJECTS</h2>
+    <div class="line"></div>
+    <span style="font-family:var(--pixel),monospace;font-size:6px;color:var(--text-dim);letter-spacing:2px">PIPELINE MONITOR v3.0</span>
+  </div>
+
+  <section id="projects" style="padding:2px;">
+    <div id="projects-inner">
+
+      <div class="project-card featured">
+        <div class="panel-header">
+          <div class="panel-title">TRADING BOT / ALGO SYSTEM</div>
+          <div class="panel-dot" style="background:var(--amber);box-shadow:0 0 6px var(--amber)"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tag active">◆ ACTIVE DEV</div>
+          <div class="project-name">ALGORITHMIC TRADING PIPELINE</div>
+          <div class="project-desc">
+            A fully automated <span class="hl">signal detection and trade execution</span> system built on top of
+            NinjaTrader 8 with a custom Python backend. The system monitors multiple futures contracts
+            (MNQ, NQ), detects high-confidence <span class="hl">breakout patterns and key level reactions</span>,
+            and executes trades autonomously with defined risk parameters (SL/TP). Features a live
+            <span class="hl">signal pipeline monitor</span> UI, real-time P&L tracking, and an API call
+            layer for external model integration.
+          </div>
+          <div class="project-tech">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">NinjaScript / C#</span>
+            <span class="tech-chip">NinjaTrader 8</span>
+            <span class="tech-chip">REST API</span>
+            <span class="tech-chip">Time-Series DB</span>
+            <span class="tech-chip">Signal Processing</span>
+            <span class="tech-chip">Risk Management</span>
+          </div>
+        </div>
+        <div class="project-stats">
+          <div class="pstat"><label>STATUS</label><value class="amber">IN DEV</value></div>
+          <div class="pstat"><label>MARKET</label><value>FUTURES - NQ</value></div>
+          <div class="pstat"><label>EXEC</label><value>AUTOMATED</value></div>
+          <div class="pstat"><label>CONF</label><value class="amber">HIGH</value></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="panel-header">
+          <div class="panel-title">UNIVERSITY THESIS</div>
+          <div class="panel-dot"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">SOLO PROJECT</div>
+          <div class="project-name">AI ANDROID APP</div>
+          <div class="project-desc">
+            An Android mobile application developed as my university thesis project, integrating multiple AI-powered features. Implemented in <span class="hl">Java</span> and utilized the <span class="hl">Gemini API</span> to provide intelligent functionalities like calendar and email handling. Built with an <span class="hl">SQLite</span> database for persistent storage, covering the full development lifecycle from system design to testing.
+          </div>
+          <div class="project-tech">
+            <span class="tech-chip">Java</span>
+            <span class="tech-chip">Gemini API</span>
+            <span class="tech-chip">SQLite</span>
+            <span class="tech-chip">Android</span>
+          </div>
+        </div>
+        <div class="project-stats">
+          <div class="pstat"><label>STATE</label><value class="amber">COMPLETE</value></div>
+          <div class="pstat"><label>SCALE</label><value>LARGE</value></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="panel-header">
+          <div class="panel-title">CLASSROOM RESERVATION</div>
+          <div class="panel-dot"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">TEAM PROJECT</div>
+          <div class="project-name">BOOKING SYSTEM</div>
+          <div class="project-desc">
+            A classroom reservation application developed as a university group project to support teachers in booking available classrooms. Implemented in <span class="hl">Python</span> and focused on managing reservations, availability, and scheduling conflicts. Gained experience in teamwork, requirement analysis, and iterative development.
+          </div>
+          <div class="project-tech">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Teamwork</span>
+            <span class="tech-chip">Iterative Dev</span>
+          </div>
+        </div>
+        <div class="project-stats">
+          <div class="pstat"><label>TYPE</label><value>GROUP</value></div>
+          <div class="pstat"><label>ROLE</label><value>DEV COLLAB</value></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="panel-header">
+          <div class="panel-title">SERVER AUTOMATION</div>
+          <div class="panel-dot"></div>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">COLLABORATION</div>
+          <div class="project-name">DISCORD BOT</div>
+          <div class="project-desc">
+            A Discord bot developed as a group project with friends to automate and enhance server interactions. Implemented in <span class="hl">Python</span>, supporting command handling, user interaction, and server management tasks. Delivered hands-on experience with <span class="hl">event-driven programming</span> in a real-world collaborative environment.
+          </div>
+          <div class="project-tech">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Discord API</span>
+            <span class="tech-chip">Event-Driven</span>
+          </div>
+        </div>
+        <div class="project-stats">
+          <div class="pstat"><label>TYPE</label><value>GROUP</value></div>
+          <div class="pstat"><label>STATE</label><value class="red">OFFLINE</value></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-header" id="skills-section">
+    <h2>◆ COMPETENCY MAP</h2>
+    <div class="line"></div>
+    <span style="font-family:var(--pixel),monospace;font-size:6px;color:var(--text-dim);letter-spacing:2px">ALL SYSTEMS</span>
+  </div>
+
+  <section style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;padding:2px;">
+    <div class="panel" style="padding:16px 18px">
+      <div style="font-family:var(--pixel),monospace;font-size:7px;color:var(--amber);margin-bottom:12px;letter-spacing:2px">CORE DEV</div>
+      <div class="skill-row"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div></div>
+      <div class="skill-row"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div></div>
+      <div class="skill-row"><span class="skill-name">C / C++</span><div class="skill-bar"><div class="skill-bar-fill" style="width:50%"></div></div></div>
+      <div class="skill-row"><span class="skill-name">HTML / CSS</span><div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div></div>
+    </div>
+    <div class="panel" style="padding:16px 18px">
+      <div style="font-family:var(--pixel),monospace;font-size:7px;color:var(--amber);margin-bottom:12px;letter-spacing:2px">TRADING</div>
+      <div class="skill-row"><span class="skill-name">Algo Design</span><div class="skill-bar"><div class="skill-bar-fill" style="width:65%;background:var(--amber)"></div></div></div>
+      <div class="skill-row"><span class="skill-name">Technical Analysis</span><div class="skill-bar"><div class="skill-bar-fill" style="width:80%;background:var(--amber)"></div></div></div>
+      <div class="skill-row"><span class="skill-name">Risk Management</span><div class="skill-bar"><div class="skill-bar-fill" style="width:65%;background:var(--amber)"></div></div></div>
+      <div class="skill-row"><span class="skill-name">Backtesting</span><div class="skill-bar"><div class="skill-bar-fill" style="width:70%;background:var(--amber)"></div></div></div>
+    </div>
+    <!-- <div class="panel" style="padding:16px 18px">
+      <div style="font-family:var(--pixel),monospace;font-size:7px;color:var(--amber);margin-bottom:12px;letter-spacing:2px">SYSTEMS</div>
+      <div class="skill-row"><span class="skill-name">Linux / Bash</span><div class="skill-bar"><div class="skill-bar-fill" style="width:68%"></div></div></div>
+      <div class="skill-row"><span class="skill-name">Networking</span><div class="skill-bar"><div class="skill-bar-fill" style="width:72%"></div></div></div>
+      <div class="skill-row"><span class="skill-name">SQL / Databases</span><div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div></div>
+      <div class="skill-row"><span class="skill-name">REST APIs</span><div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div></div>
+    </div> -->
+    <div class="panel" style="padding:16px 18px">
+      <div style="font-family:var(--pixel),monospace;font-size:7px;color:var(--amber);margin-bottom:12px;letter-spacing:2px">TOOLING</div>
+      <div class="skill-row"><span class="skill-name">Git / GitHub</span><div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div></div>
+      <div class="skill-row"><span class="skill-name">Pandas / Numpy</span><div class="skill-bar"><div class="skill-bar-fill" style="width:50%"></div></div></div>
+      <div class="skill-row"><span class="skill-name">Claude</span><div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div></div>
+      <!-- <div class="skill-row"><span class="skill-name">Data Viz</span><div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div></div> -->
+    </div>
+  </section>
+
+  <div id="rpg-bar">
+    <div class="rpg-desk">
+      <svg class="char-svg" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" style="width:36px;height:54px;image-rendering:pixelated">
+        <rect x="5" y="1" width="6" height="3" fill="#7B4F2E"/>
+        <rect x="4" y="2" width="8" height="3" fill="#7B4F2E"/>
+        <rect x="4" y="4" width="8" height="6" fill="#F5C899"/>
+        <rect x="5" y="6" width="2" height="1" fill="#2c1a0e"/>
+        <rect x="9" y="6" width="2" height="1" fill="#2c1a0e"/>
+        <rect x="6" y="9" width="4" height="1" fill="#d4906a"/>
+        <rect x="3" y="10" width="10" height="8" fill="#2255aa"/>
+        <rect x="6" y="10" width="4" height="8" fill="#efefef"/>
+        <rect x="1" y="10" width="3" height="6" fill="#2255aa"/>
+        <rect x="12" y="10" width="3" height="6" fill="#2255aa"/>
+        <rect x="1" y="15" width="3" height="2" fill="#F5C899"/>
+        <rect x="12" y="15" width="3" height="2" fill="#F5C899"/>
+        <rect x="4" y="18" width="3" height="5" fill="#333"/>
+        <rect x="9" y="18" width="3" height="5" fill="#333"/>
+        <rect x="3" y="22" width="4" height="2" fill="#111"/>
+        <rect x="9" y="22" width="4" height="2" fill="#111"/>
+      </svg>
+      <div class="rpg-name-plate"><div class="rp-dot amber"></div> DAY TRADER &nbsp;·&nbsp; TRADING</div>
+    </div>
+
+    <div style="flex:0.3"></div>
+
+    <div class="rpg-desk">
+      <svg class="char-svg" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" style="width:36px;height:54px;image-rendering:pixelated">
+        <rect x="4" y="1" width="8" height="4" fill="#1a1a1a"/>
+        <rect x="4" y="4" width="8" height="6" fill="#e8cca0"/>
+        <rect x="5" y="6" width="2" height="1" fill="#2c1a0e"/>
+        <rect x="9" y="6" width="2" height="1" fill="#2c1a0e"/>
+        <rect x="6" y="9" width="4" height="1" fill="#c07050"/>
+        <rect x="3" y="10" width="10" height="8" fill="#226622"/>
+        <rect x="1" y="10" width="3" height="6" fill="#226622"/>
+        <rect x="12" y="10" width="3" height="6" fill="#226622"/>
+        <rect x="1" y="15" width="3" height="2" fill="#e8cca0"/>
+        <rect x="12" y="15" width="3" height="2" fill="#e8cca0"/>
+        <rect x="4" y="18" width="3" height="5" fill="#444"/>
+        <rect x="9" y="18" width="3" height="5" fill="#444"/>
+        <rect x="3" y="22" width="4" height="2" fill="#111"/>
+        <rect x="9" y="22" width="4" height="2" fill="#111"/>
+      </svg>
+      <div class="rpg-name-plate"><div class="rp-dot"></div> SIGNAL MGR &nbsp;·&nbsp; ALL GOOD!</div>
+    </div>
+
+    <div style="flex:0.3"></div>
+
+    <div class="rpg-desk">
+      <svg class="char-svg" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" style="width:36px;height:54px;image-rendering:pixelated">
+        <rect x="5" y="1" width="6" height="3" fill="#111"/>
+        <rect x="4" y="2" width="8" height="4" fill="#222"/>
+        <rect x="4" y="4" width="8" height="6" fill="#f0d0a0"/>
+        <rect x="5" y="6" width="2" height="1" fill="#1a1a1a"/>
+        <rect x="9" y="6" width="2" height="1" fill="#1a1a1a"/>
+        <rect x="6" y="9" width="4" height="1" fill="#c08060"/>
+        <rect x="3" y="10" width="10" height="8" fill="#cc6600"/>
+        <rect x="1" y="10" width="3" height="6" fill="#cc6600"/>
+        <rect x="12" y="10" width="3" height="6" fill="#cc6600"/>
+        <rect x="1" y="15" width="3" height="2" fill="#f0d0a0"/>
+        <rect x="12" y="15" width="3" height="2" fill="#f0d0a0"/>
+        <rect x="4" y="18" width="3" height="5" fill="#555"/>
+        <rect x="9" y="18" width="3" height="5" fill="#555"/>
+        <rect x="3" y="22" width="4" height="2" fill="#222"/>
+        <rect x="9" y="22" width="4" height="2" fill="#222"/>
+      </svg>
+      <div class="rpg-name-plate"><div class="rp-dot"></div> UPLOADER &nbsp;·&nbsp; ONLINE</div>
+    </div>
+
+    <div style="flex:0.3"></div>
+
+    <div class="rpg-desk">
+      <svg class="char-svg" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" style="width:36px;height:54px;image-rendering:pixelated">
+        <rect x="4" y="1" width="8" height="4" fill="#5533aa"/>
+        <rect x="4" y="4" width="8" height="6" fill="#fcddb0"/>
+        <rect x="5" y="6" width="2" height="1" fill="#1a1a1a"/>
+        <rect x="9" y="6" width="2" height="1" fill="#1a1a1a"/>
+        <rect x="6" y="9" width="4" height="1" fill="#c09070"/>
+        <rect x="3" y="10" width="10" height="8" fill="#334499"/>
+        <rect x="6" y="10" width="4" height="3" fill="#fff"/>
+        <rect x="1" y="10" width="3" height="6" fill="#334499"/>
+        <rect x="12" y="10" width="3" height="6" fill="#334499"/>
+        <rect x="1" y="15" width="3" height="2" fill="#fcddb0"/>
+        <rect x="12" y="15" width="3" height="2" fill="#fcddb0"/>
+        <rect x="4" y="18" width="3" height="5" fill="#333"/>
+        <rect x="9" y="18" width="3" height="5" fill="#333"/>
+        <rect x="3" y="22" width="4" height="2" fill="#111"/>
+        <rect x="9" y="22" width="4" height="2" fill="#111"/>
+      </svg>
+      <div class="rpg-name-plate"><div class="rp-dot"></div> DOWNLOADER &nbsp;·&nbsp; ONLINE</div>
+    </div>
+
+    <div style="flex:1"></div>
+
+    <div style="display:flex;flex-direction:column;justify-content:center;gap:6px;padding:12px 20px;border-left:1px solid var(--panel-border);min-width:280px">
+      <div style="font-family:var(--pixel),monospace;font-size:6px;color:var(--amber);letter-spacing:2px;margin-bottom:4px">SYSTEM LOG</div>
+      <div style="font-size:11px;color:var(--green-dim)">▶ Signal pipeline: <span style="color:var(--green)">ACTIVE</span></div>
+      <div style="font-size:11px;color:var(--green-dim)">▶ Algo engine: <span style="color:var(--amber)">COMPILING</span></div>
+      <div style="font-size:11px;color:var(--green-dim)">▶ Market feed: <span style="color:var(--green)">CONNECTED</span></div>
+      <div style="font-size:11px;color:var(--green-dim)">▶ CS degree: <span style="color:var(--green)">LOADED</span></div>
+    </div>
+  </div>
+
+  <div class="section-header" id="contact-section">
+    <h2>◆ CONTACT / COMMS</h2>
+    <div class="line"></div>
+  </div>
+
+  <div id="contact-bar">
+    <div class="contact-title">OPEN CHANNEL</div>
+    <div class="contact-links">
+      <a href="https://github.com/asdtroll3" target="_blank" class="contact-link">
+        <span class="icon">GH</span>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/kristof-alex-fazekas-482784316/" target="_blank" class="contact-link">
+        <span class="icon">LI</span>
+        LinkedIn
+      </a>
+      <!-- <div class="contact-link">
+        <span class="icon">@</span>
+        Email
+      </div> -->
+    </div>
+    <div style="margin-left:auto;font-family:var(--pixel),monospace;font-size:6px;color:var(--text-dim);letter-spacing:2px">
+      HU / RO / EN &nbsp;·&nbsp; CS GRAD &nbsp;·&nbsp; ALGO TRADER
+    </div>
+  </div>
+
+  <div style="background:#060d06;border-top:1px solid var(--panel-border);padding:8px 16px;display:flex;justify-content:space-between;align-items:center">
+    <div style="font-family:var(--pixel),monospace;font-size:6px;color:var(--text-dim);letter-spacing:2px">
+      © 2026 &nbsp;·&nbsp; AGENT OFFICE PORTFOLIO v3.0 &nbsp;·&nbsp; ALL SYSTEMS OPERATIONAL
+    </div>
+    <div style="font-size:11px;color:var(--text-dim)">
+      Built with <span style="color:var(--green)">precision</span> + <span style="color:var(--amber)">coffee</span>
+    </div>
+  </div>
+
+</div><script>
+// ── CLOCK ──
+function updateClock() {
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2,'0');
+  const m = String(now.getMinutes()).padStart(2,'0');
+  const s = String(now.getSeconds()).padStart(2,'0');
+  document.getElementById('clock').textContent = `${h}:${m}:${s}`;
+}
+updateClock();
+setInterval(updateClock, 1000);
+
+// ── PING RANDOMIZER ──
+setInterval(() => {
+  const p = Math.floor(Math.random() * 20) + 8;
+  document.getElementById('ping-val').textContent = p;
+}, 3000);
+
+// ── MINI CHART ──
+const canvas = document.getElementById('chartCanvas');
+if (canvas) {
+  const ctx = canvas.getContext('2d');
+  canvas.width = canvas.parentElement.offsetWidth;
+  canvas.height = canvas.parentElement.offsetHeight;
+
+  // Generate fake price data
+  const data = [];
+  let price = 27100;
+  for (let i = 0; i < 60; i++) {
+    price += (Math.random() - 0.48) * 15;
+    data.push(price);
+  }
+
+  function drawChart() {
+    const w = canvas.width, h = canvas.height;
+    ctx.clearRect(0, 0, w, h);
+
+    const min = Math.min(...data) - 20;
+    const max = Math.max(...data) + 20;
+    const range = max - min;
+
+    // grid lines
+    ctx.strokeStyle = 'rgba(26,46,26,0.4)';
+    ctx.lineWidth = 1;
+    for (let i = 0; i <= 4; i++) {
+      const y = (i / 4) * h;
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(w, y);
+      ctx.stroke();
+    }
+
+    // price line
+    ctx.beginPath();
+    ctx.strokeStyle = '#00ff41';
+    ctx.lineWidth = 1.5;
+    ctx.shadowColor = '#00ff41';
+    ctx.shadowBlur = 4;
+    data.forEach((d, i) => {
+      const x = (i / (data.length - 1)) * w;
+      const y = h - ((d - min) / range) * h;
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    });
+    ctx.stroke();
+
+    // area fill
+    ctx.shadowBlur = 0;
+    const lastX = w;
+    const lastY = h - ((data[data.length-1] - min) / range) * h;
+    ctx.lineTo(lastX, h);
+    ctx.lineTo(0, h);
+    ctx.closePath();
+    const grad = ctx.createLinearGradient(0, 0, 0, h);
+    grad.addColorStop(0, 'rgba(0,255,65,0.15)');
+    grad.addColorStop(1, 'rgba(0,255,65,0)');
+    ctx.fillStyle = grad;
+    ctx.fill();
+  }
+
+  drawChart();
+}
+
+// ── TYPEWRITER for reasoning ──
+const lines = [
+  "Algorithmic pipeline active — NQ structure mapped, signal layers compiled...",
+  "Waterfall detected from 27154 high — pullback structure forming, await confirmation.",
+  "Key level confluence at 27108 VWAP — high probability zone, monitoring...",
+  "CS fundamentals applied to market microstructure — logic compiled cleanly.",
+  "System online. Day trader in the office. All signals reporting nominal."
+];
+let lineIdx = 0;
+let charIdx = 0;
+let currentLine = '';
+const el = document.getElementById('reasoning-text');
+
+function typeNext() {
+  if (!el) return;
+  if (charIdx < lines[lineIdx].length) {
+    currentLine += lines[lineIdx][charIdx];
+    el.textContent = currentLine;
+    charIdx++;
+    setTimeout(typeNext, 28);
+  } else {
+    setTimeout(() => {
+      currentLine = '';
+      charIdx = 0;
+      lineIdx = (lineIdx + 1) % lines.length;
+      typeNext();
+    }, 3200);
+  }
+}
+setTimeout(typeNext, 1000);
+
+// ── HOVER GLOW on project cards ──
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    card.style.setProperty('--mx', x + 'px');
+    card.style.setProperty('--my', y + 'px');
+  });
+});
+</script>
+</body>
+</html>
